@@ -40,7 +40,10 @@
             // Covid19Chart
             // 
             this.Covid19Chart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            chartArea1.AxisX.Interval = 5D;
+            chartArea1.AxisX.IsLabelAutoFit = false;
             chartArea1.AxisX.LabelAutoFitMaxFontSize = 20;
+            chartArea1.AxisX.LabelStyle.Angle = -90;
             chartArea1.BorderWidth = 2;
             chartArea1.Name = "ChartArea1";
             this.Covid19Chart.ChartAreas.Add(chartArea1);

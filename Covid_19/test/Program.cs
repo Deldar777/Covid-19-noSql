@@ -37,16 +37,17 @@ namespace test
                 for (int y = 0; y < docs.Count; y++)
                 {
                     int number = int.Parse(docs[y].GetValue(dates[i]).ToString());
-                    if(number < 0)
-                    {
-                        number = number * -1;
-                    }
+
+    
                     total += number;
-                    
+                }
+
+                if(total < 0)
+                {
+                    total = total * -1;
                 }
 
                 Console.WriteLine(total);
-
                 numbers.Add(total);
             }
 

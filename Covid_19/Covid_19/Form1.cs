@@ -99,6 +99,11 @@ namespace Covid_19
                      total += int.Parse(confirmedCases[y].GetValue(dates[i]).ToString());
                 }
 
+                if (total < 0)
+                {
+                    total = total * -1;
+                }
+
                 numbers.Add(total);
             }
 
